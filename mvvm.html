@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div id="app">
+      {{message}}
+      <p>{{message}}</p>
+      <input type="text" v-model='name' />{{name}}
+    </div>
+    <script type="text/javascript" src='./Zvue.js'></script>
+    <script type="text/javascript">
+      var vm = new Zvue({
+        el: '#app',
+        data: {
+          message: '我是message',
+          name: '张三'
+        }
+      })
+    </script>
+  </body>
+</html>
